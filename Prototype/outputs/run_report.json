@@ -1,0 +1,101 @@
+{
+  "scenario": "immune_resistance",
+  "design_config": {
+    "path": "/Users/sally/Desktop/SpatialMMKPNN/design_config.json",
+    "sha256_12": "f17cdd30beeb",
+    "expected_pathway_directions": {
+      "TGF_beta": 1,
+      "WNT": 1,
+      "IFNG": -1,
+      "Antigen_Presentation": -1
+    },
+    "seeded_lr_pairs": [
+      "CXCL12->CXCR4",
+      "TGFB1->TGFBR2",
+      "IFNG->IFNGR1"
+    ]
+  },
+  "environment": {
+    "path": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/environment.json",
+    "sha256_12": "a38f11042da5"
+  },
+  "metrics": {
+    "pathway_attribution_correlation_r": 0.932,
+    "pathway_attribution_correlation_p": 0.0677882792067294,
+    "corr_ok_threshold": 0.6,
+    "corr_ok": true,
+    "seeded_top2_ok": true,
+    "edge_power": {
+      "CXCL12->CXCR4": {
+        "n_edges": 7268,
+        "ok": true
+      },
+      "TGFB1->TGFBR2": {
+        "n_edges": 1735,
+        "ok": true
+      },
+      "IFNG->IFNGR1": {
+        "n_edges": 7285,
+        "ok": true
+      }
+    },
+    "edge_power_ok": true,
+    "decoy_separation_ok": true
+  },
+  "lr_ranking_top": [
+    {
+      "rank": 1,
+      "pair": "TGFB1->TGFBR2",
+      "n_edges": 1735,
+      "score_sum": 588.668212890625,
+      "score_mean": 0.3392900228500366,
+      "attn_mean": 0.11881551891565323,
+      "prod_mean": 2.824746608734131
+    },
+    {
+      "rank": 2,
+      "pair": "CXCL12->CXCR4",
+      "n_edges": 7268,
+      "score_sum": 585.3592529296875,
+      "score_mean": 0.08053924888372421,
+      "attn_mean": 0.11940841376781464,
+      "prod_mean": 0.669984757900238
+    },
+    {
+      "rank": 3,
+      "pair": "IFNG->IFNGR1",
+      "n_edges": 7285,
+      "score_sum": 29.639163970947266,
+      "score_mean": 0.004068519454449415,
+      "attn_mean": 0.118737131357193,
+      "prod_mean": 0.018775545060634613
+    }
+  ],
+  "artifacts": {
+    "lr_ranking_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/lr_driver_ranking.parquet",
+    "decoy_scores_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/lr_driver_decoys.parquet",
+    "sensitivity_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/lr_driver_sensitivity.parquet",
+    "attention_npy": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/gat_attention.npy",
+    "attention_edges_npy": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/gat_attention_edges.npy",
+    "figures": {
+      "attention_overlay": "/Users/sally/Desktop/SpatialMMKPNN/figures/gat_attention_overlay.png",
+      "cluster_attribution": "/Users/sally/Desktop/SpatialMMKPNN/figures/pathway_attribution_clusters.png",
+      "correlation": "/Users/sally/Desktop/SpatialMMKPNN/figures/pathway_correlation.png",
+      "lr_top_overlay": "/Users/sally/Desktop/SpatialMMKPNN/figures/lr_top_pair_overlay.png",
+      "decoy_plot": "/Users/sally/Desktop/SpatialMMKPNN/figures/lr_seeded_vs_decoy.png",
+      "sensitivity_plot": "/Users/sally/Desktop/SpatialMMKPNN/figures/lr_sensitivity.png"
+    },
+    "figures_present_flags": {
+      "attention_overlay": true,
+      "cluster_attribution": true,
+      "correlation": true,
+      "lr_top_overlay": true,
+      "decoy_plot": true,
+      "sensitivity_plot": true
+    }
+  },
+  "summary_flags": {
+    "all_success": true,
+    "attention_artifacts_ok": true
+  }
+}

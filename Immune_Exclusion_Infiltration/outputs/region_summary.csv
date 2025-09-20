@@ -1,0 +1,4 @@
+sample_id,spots,boundary,interior,note
+GSE274103,4952,51,4901,erosion_px=1
+GSE226997,4148,45,4103,erosion_px=1
+GSE217414,2887,181,2706,erosion_px=2

@@ -1,0 +1,26 @@
+[
+  {
+    "pair": "CXCL12->CXCR4",
+    "edges": 832,
+    "ligand_cutoff_used": 1.0,
+    "receptor_cutoff_used": 1.0,
+    "target_min_edges": 200,
+    "relax_steps": 0
+  },
+  {
+    "pair": "TGFB1->TGFBR2",
+    "edges": 487,
+    "ligand_cutoff_used": 1.0,
+    "receptor_cutoff_used": 1.0,
+    "target_min_edges": 200,
+    "relax_steps": 0
+  },
+  {
+    "pair": "IFNG->IFNGR1",
+    "edges": 6,
+    "ligand_cutoff_used": 0.05,
+    "receptor_cutoff_used": 0.25,
+    "target_min_edges": 200,
+    "relax_steps": 2
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "scores_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/pathway_scores.parquet",
+  "edges_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/spatial_edges_kNN_k8.parquet",
+  "features": "pathway z-scores (Cell 4)",
+  "edge_weight": "1/(distance+1e-6)",
+  "undirected_stored_as": "both directions",
+  "nodes": 4325,
+  "features_dim": 4
+}

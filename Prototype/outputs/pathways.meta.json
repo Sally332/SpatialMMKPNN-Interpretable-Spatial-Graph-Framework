@@ -1,0 +1,15 @@
+{
+  "n_pathways": 4,
+  "pathways": [
+    "TGF_beta",
+    "WNT",
+    "IFNG",
+    "Antigen_Presentation"
+  ],
+  "mask_npz": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/pathway_mask_geneXpathway.npz",
+  "scores_parquet": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/pathway_scores.parquet",
+  "mapping_csv": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/pathway_mapping.csv",
+  "normalization": "CPM1e4 -> log1p -> per-gene z-score",
+  "adata_used": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/adata_breast_visium_HIREScoords.h5ad",
+  "seed": 13
+}

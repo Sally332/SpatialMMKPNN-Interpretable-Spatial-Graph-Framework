@@ -1,0 +1,33 @@
+{
+  "seed": 13,
+  "pairs_evaluated": [
+    [
+      "CXCL12",
+      "CXCR4"
+    ],
+    [
+      "TGFB1",
+      "TGFBR2"
+    ],
+    [
+      "IFNG",
+      "IFNGR1"
+    ]
+  ],
+  "scoring": "sum(attention * ligand_activity * receptor_activity) over directed edges with activity above adaptive quantiles",
+  "activity_space": "CPM1e4 \u2192 log1p \u2192 per-gene z-score \u2192 ReLU(z)",
+  "threshold_policy": {
+    "quantile_start": 0.8,
+    "quantile_step": 0.1,
+    "min_edges_per_pair": 200,
+    "max_relax_steps": 3
+  },
+  "inputs": {
+    "graph_data": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/graph_data.pt",
+    "ann_data": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/adata_breast_visium_HIREScoords.h5ad",
+    "design_config": "/Users/sally/Desktop/SpatialMMKPNN/design_config.json",
+    "attn_npy": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/gat_attention.npy",
+    "attn_edges_npy": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/gat_attention_edges.npy"
+  },
+  "output_table": "/Users/sally/Desktop/SpatialMMKPNN/checkpoints/lr_driver_ranking.parquet"
+}

@@ -1,0 +1,13 @@
+sample_id,axis,base_call,rim_-25%,rim_+25%,thr_cpm≥1
+GSE217414,CXCL12->CXCR4,depleted,neutral,depleted,depleted
+GSE226997,CXCL12->CXCR4,enriched,enriched,enriched,enriched
+GSE274103,CXCL12->CXCR4,enriched,enriched,enriched,enriched
+GSE217414,SPP1->ITG*,enriched,enriched,enriched,enriched
+GSE226997,SPP1->ITG*,enriched,enriched,enriched,enriched
+GSE274103,SPP1->ITG*,enriched,enriched,enriched,enriched
+GSE217414,TGFB1->TGFBR*,enriched,enriched,enriched,enriched
+GSE226997,TGFB1->TGFBR*,enriched,enriched,enriched,enriched
+GSE274103,TGFB1->TGFBR*,neutral,depleted,enriched,neutral
+GSE217414,VEGFA->KDR,enriched,enriched,enriched,enriched
+GSE226997,VEGFA->KDR,neutral,enriched,enriched,neutral
+GSE274103,VEGFA->KDR,enriched,enriched,enriched,enriched
