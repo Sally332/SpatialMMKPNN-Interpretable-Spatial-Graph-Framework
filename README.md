@@ -1,6 +1,7 @@
 # SpatialMMKPNN — Interpretable Spatial Graph Framework
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17189130.svg)](https://doi.org/10.5281/zenodo.17189130)
 
 *A modular and interpretable graph framework for spatial transcriptomics in the tumor microenvironment.*  
 
